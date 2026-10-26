@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover food, restaurants, and cafes in Delhi NCR.">
+  <title>Zomato | Discover Great Food</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="get-app-link" href="#get-app">Get the App</a>
+
+      <ul class="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#localities">Localities</a></li>
+        <li><a href="#explore">Explore</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <a class="brand" href="#home" aria-label="Zomato home">zomato</a>
+      <h1>Discover the best food in Delhi NCR</h1>
+      <p>Find restaurants, cafes, and delicious food near you.</p>
+
+      <form class="search-bar" role="search" onsubmit="return false">
+        <label class="location-field">
+          <svg
+            class="location-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+            <circle
+              cx="12"
+              cy="10"
+              r="2.5"
+              stroke="currentColor"
+              stroke-width="2"
+            />
+          </svg>
+          <input type="text" aria-label="Your location" placeholder="Delhi NCR">
+        </label>
+
+        <span class="search-divider" aria-hidden="true"></span>
+
+        <label class="restaurant-field">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            aria-label="Search restaurants or dishes"
+            placeholder="Search for restaurants, cuisine or a dish"
+          >
+        </label>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="category-section" aria-label="Ways to explore">
+      <a class="category-card" href="#food-list">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85"
+          alt="Restaurant dining area"
+        >
+        <div class="category-copy">
+          <h2>Order Food Online</h2>
+          <p>Your favourite meals, delivered to your door.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="#collections">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85"
+          alt="People enjoying a restaurant meal"
+        >
+        <div class="category-copy">
+          <h2>Go Out for a Meal</h2>
+          <p>Explore restaurants and enjoy a meal out.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="#explore">
+        <img
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85"
+          alt="Restaurant table"
+        >
+        <div class="category-copy">
+          <h2>Zomato Pro</h2>
+          <p>Discover special dining experiences and offers.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="#collections">
+        <img
+          src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=900&q=85"
+          alt="Nightlife event"
+        >
+        <div class="category-copy">
+          <h2>Nightlife &amp; Clubs</h2>
+          <p>Find places for a fun evening with friends.</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="content-section" id="collections">
+      <p class="section-label">EXPLORE WHAT'S TRENDING</p>
+      <h2>Collections</h2>
+      <p class="section-intro">
+        Discover popular places and new experiences around Delhi NCR.
+      </p>
+
+      <div class="collection-grid">
+        <article class="collection-card">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
+            alt="New restaurant"
+            loading="lazy"
+          >
+          <div class="collection-overlay">
+            <h3>Newly Opened</h3>
+            <p>16 places <span>›</span></p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=85"
+            alt="Trending restaurant"
+            loading="lazy"
+          >
+          <div class="collection-overlay">
+            <h3>Trending This Week</h3>
+            <p>30 places <span>›</span></p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img
+            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=85"
+            alt="Restaurant with warm lighting"
+            loading="lazy"
+          >
+          <div class="collection-overlay">
+            <h3>Best of Delhi NCR</h3>
+            <p>157 places <span>›</span></p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"
+            alt="Coffee at a cafe"
+            loading="lazy"
+          >
+          <div class="collection-overlay">
+            <h3>Great Cafes</h3>
+            <p>28 places <span>›</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section locality-section" id="localities">
+      <p class="section-label">FIND PLACES NEAR YOU</p>
+      <h2>Popular localities in and around Delhi NCR</h2>
+
+      <div class="locality-grid">
+        <a class="locality-card" href="#food-list">
+          <span><strong>Connaught Place</strong><small>339 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>Sector 29, Gurugram</strong><small>142 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>Sector 18, Noida</strong><small>241 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>Rajouri Garden</strong><small>400 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>Saket</strong><small>355 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>DLF Cyber City</strong><small>158 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>Golf Course Road</strong><small>155 places</small></span>
+          <b>›</b>
+        </a>
+        <a class="locality-card" href="#food-list">
+          <span><strong>DLF Phase 4</strong><small>224 places</small></span>
+          <b>›</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="app-section" id="get-app">
+      <div class="app-copy">
+        <p class="section-label">FOOD, JUST A TAP AWAY</p>
+        <h2>Get the Zomato app</h2>
+        <p>
+          Enter your email or phone number to keep your favourite restaurants
+          close at hand.
+        </p>
+
+        <form class="app-form" onsubmit="return false">
+          <label class="visually-hidden" for="contact">
+            Email address or phone number
+          </label>
+          <input
+            id="contact"
+            name="contact"
+            type="text"
+            placeholder="Email address or phone number"
+            required
+          >
+          <button type="button">Share app link</button>
+        </form>
+
+        <small class="form-note">
+          This sample form needs a service connected to send an app link.
+        </small>
+      </div>
+    </section>
+
+    <section class="content-section explore-section" id="explore">
+      <p class="section-label">MORE TO DISCOVER</p>
+      <h2>Explore other options for you</h2>
+
+      <article class="explore-card">
+        <h3>Popular cuisines near me</h3>
+        <p>
+          Find biryani, pizza, burgers, Chinese food, and many more favourites.
+          Explore different flavours and choose a meal you will love.
+        </p>
+      </article>
+
+      <article class="explore-card">
+        <h3>Popular restaurant types near me</h3>
+        <p>
+          Browse cafes, family restaurants, bakeries, dessert shops, and more.
+          There is a place for a quick snack or a special meal.
+        </p>
+      </article>
+
+      <article class="explore-card">
+        <h3>Top restaurant chains</h3>
+        <p>
+          Discover familiar restaurant chains and explore their menus nearby.
+          Compare tasty options for lunch, dinner, or a treat.
+        </p>
+      </article>
+    </section>
+
+    <section class="content-section directory-section" id="food-list">
+      <p class="section-label">FOOD MENU</p>
+      <h2>Popular food items</h2>
+
+      <div class="directory-grid">
+        <span>Biryani</span><span>Chicken Karahi</span>
+        <span>Mutton Karahi</span><span>Chicken Pulao</span>
+        <span>Beef Pulao</span><span>Nihari</span>
+        <span>Haleem</span><span>Chicken Tikka</span>
+        <span>Seekh Kebab</span><span>Chapli Kebab</span>
+        <span>Chicken Burger</span><span>Beef Burger</span>
+        <span>Zinger Burger</span><span>Cheese Burger</span>
+        <span>Double Patty Burger</span><span>Chicken Shawarma</span>
+        <span>Beef Shawarma</span><span>Chicken Roll</span>
+        <span>Paratha Roll</span><span>Club Sandwich</span>
+        <span>Chicken Pizza</span><span>Margherita Pizza</span>
+        <span>Pepperoni Pizza</span><span>Fajita Pizza</span>
+        <span>BBQ Pizza</span><span>Cheese Pizza</span>
+        <span>Vegetable Pizza</span><span>Chicken Pasta</span>
+        <span>Alfredo Pasta</span><span>Mac and Cheese</span>
+        <span>French Fries</span><span>Loaded Fries</span>
+        <span>Chicken Nuggets</span><span>Chicken Wings</span>
+        <span>Hot Wings</span><span>Fish and Chips</span>
+        <span>Fried Chicken</span><span>Chicken Strips</span>
+        <span>Onion Rings</span><span>Garlic Bread</span>
+        <span>Chicken Chow Mein</span><span>Beef Chow Mein</span>
+        <span>Chicken Manchurian</span><span>Egg Fried Rice</span>
+        <span>Chicken Fried Rice</span><span>Sweet and Sour Chicken</span>
+        <span>Kung Pao Chicken</span><span>Spring Rolls</span>
+        <span>Chicken Momos</span><span>Vegetable Momos</span>
+        <span>Chicken Tacos</span><span>Beef Tacos</span>
+        <span>Chicken Burrito</span><span>Beef Burrito</span>
+        <span>Quesadilla</span><span>Grilled Chicken</span>
+        <span>Chicken Steak</span><span>Beef Steak</span>
+        <span>Chicken Fajitas</span><span>Caesar Salad</span>
+        <span>Masala Dosa</span><span>Plain Dosa</span>
+        <span>Idli Sambar</span><span>Chana Masala</span>
+        <span>Palak Paneer</span><span>Butter Chicken</span>
+        <span>Chicken Tandoori</span><span>Dal Makhani</span>
+        
+      </div>
+    </section>
+
+    <section class="content-section directory-section" id="cities">
+      <p class="section-label">OUR LOCATIONS</p>
+      <h2>Cities we deliver to</h2>
+      <p class="section-intro">Find restaurants and food in your city.</p>
+
+      <div class="directory-grid city-grid">
+        <span>Delhi</span><span>Mumbai</span><span>Bengaluru</span>
+        <span>Hyderabad</span><span>Chennai</span><span>Kolkata</span>
+        <span>Pune</span><span>Ahmedabad</span><span>Jaipur</span>
+        <span>Lucknow</span><span>Chandigarh</span><span>Indore</span>
+        <span>Bhopal</span><span>Nagpur</span><span>Surat</span>
+        <span>Vadodara</span><span>Rajkot</span><span>Udaipur</span>
+        <span>Jodhpur</span><span>Agra</span><span>Kanpur</span>
+        <span>Varanasi</span><span>Prayagraj</span><span>Gorakhpur</span>
+        <span>Patna</span><span>Ranchi</span><span>Jamshedpur</span>
+      
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">zomato</a>
+    <p>Discover great food and places around you.</p>
+  </footer>
+</body>
+</html>
